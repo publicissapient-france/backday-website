@@ -84,6 +84,7 @@ body {
 
 @xebiaColorDeep: #45133F;
 @orangeColor: #F99B1D;
+@redColor: #aa2615;
 
 @greyBackgroundProgram: #F5F5F5;
 
@@ -110,7 +111,42 @@ header {
       float: left;
     }
 
-    @media (max-width: 420px) {
+    nav {
+
+      float:right;
+      padding-right: 100px;
+      padding-top:30px;
+
+      @media (max-width:480px) {
+
+        float:none;
+        padding-right:0;
+        display:block;
+        text-align:center;
+
+      }
+
+      ul li {
+
+      display:inline-block;
+      padding: 0px 30px;
+
+      @media (max-width:480px) {
+
+        padding:10px 30px;
+        display:block;
+      }
+
+      a {
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+      }
+    }
+
+    }
+
+    @media (max-width: 480px) {
       text-align: center;
       .logo-xebia {
         margin-top: 0;
@@ -125,12 +161,15 @@ header {
     .clearFloat();
   }
 
-  .devops {
+  .backday {
+
+    background-color:#000;
+
     .inner-wrapper {
-      min-height: 464px;
+      min-height: 400px;
     }
     position: relative;
-    .diagonal-gradient(@xebiaColorDeep, @xebiaColor);
+
 
     .devops-titre {
       margin-top: 55px;
@@ -143,18 +182,7 @@ header {
       bottom: 5px;
     }
 
-    .time-wrapper {
-      margin-top: 60px;
-      time {
-        color: @orangeColor;
-        font-size: 50px;
-        margin-left: 40px;
 
-        @media(max-width: 400px) {
-          margin-left: 0;
-        }
-      }
-    }
 
     @media (max-width: 1020px) {
       text-align: center;
@@ -166,11 +194,7 @@ header {
       }
     }
 
-    @media (max-width: 705px) {
-      .devops-logo {
-        width: 100%;
-      }
-    }
+
 
     @media (max-width: 470px) {
       .devops-titre {
@@ -211,7 +235,7 @@ main section {
 }
 
 .centerBloc() {
-  max-width: 824px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,9 +256,9 @@ main section {
   }
 
   &:hover {
-    color: @orangeColor;
+    color: @redColor;
     &:after {
-      background-color: @orangeColor;
+      background-color: @redColor;
     }
   }
 }
@@ -243,7 +267,7 @@ main {
   .tagline {
     h1 {
       text-align: center;
-      color: @orangeColor;
+      color: @redColor;
       font-size: 22px;
       padding-top: 30px;
       padding-bottom: 30px;
@@ -254,7 +278,7 @@ main {
       text-transform: uppercase;
       font-size: 21px;
       border-bottom: 1px solid black;
-
+      max-width:900px;
       margin-top: 20px;
 
       .centerBloc();
@@ -284,11 +308,11 @@ main {
       text-align: center;
 
       a {
-        color:orange;
+        color:#aa2615;
         text-decoration: none;
 
         &:hover {
-          color:orange;
+          color:#aa2615;
           text-decoration: none;
         }
       }
@@ -311,13 +335,13 @@ main {
     padding-bottom: 60px;
 
     h1 {
-      text-align: center;
+
       text-transform: uppercase;
       font-size: 22px;
       padding-top: 30px;
-      padding-bottom: 15px;
+
       margin-bottom: 15px;
-      color: @xebiaColor;
+
 
       max-width: 900px;
       margin-left: auto;
@@ -326,6 +350,7 @@ main {
       border-bottom: 1px solid black;
       b {
         font-weight: bold;
+        color:#aa2615;
       }
     }
 
@@ -340,7 +365,7 @@ main {
         margin-right: auto;
 
         thead th {
-          color: @orangeColor;
+          color: @redColor;
           text-transform: uppercase;
           font-weight: bold;
         }
@@ -385,7 +410,7 @@ main {
           a {
             text-decoration: none;
             &:hover {
-              color: @orangeColor;
+              color: @redColor;
             }
           }
 
@@ -399,7 +424,7 @@ main {
             color: @xebiaColor;
 
             &:hover {
-              color: @orangeColor;
+              color: @redColor;
             }
 
             @media (min-width: 860px ) {
@@ -477,11 +502,11 @@ main {
 
             &.center-cell:before {
               content: 'LOG';
-              color: @orangeColor;
+              color: @redColor;
             }
             &.second-room:before {
               content: 'PERF';
-              color: @orangeColor;
+              color: @redColor;
             }
 
             &.inscription-cell {
@@ -517,14 +542,16 @@ main {
     .img-wrapper {
 
       &.first {
-        width: 290px;
+
       }
       &.second {
         width: 200px;
+        position: relative;
+top: 20px;
       }
       &.third {
         margin-left: 20px;
-        width: 160px;
+
       }
 
       &.second-quarter, &.third-quarter, &.fourth-quarter {
@@ -624,7 +651,7 @@ footer {
     }
 
     .tagline-alliance {
-      width: 450px;
+      width: 550px;
       margin: auto;
       @media (max-width: 470px) {
         width: 100%;
@@ -856,11 +883,11 @@ button.close {
 }
 
 .modal-header {
-  background-color: @orangeColor;
+  background-color: @redColor;
   color: white;
 
   .close {
-    color: @orangeColor;
+    color: @redColor;
     opacity: 1;
     background-color: white;
     @sizeClose: 25px;
@@ -869,7 +896,7 @@ button.close {
     border-radius: @sizeClose;
 
     &:hover {
-      color: darken(@orangeColor, 10%);
+      color: darken(@redColor, 10%);
       background-color: darken(white, 10%);
       opacity: 1;
     }
@@ -1012,7 +1039,7 @@ button.close {
 
         .name {
           text-transform: uppercase;
-          color: @orangeColor;
+          color: @redColor;
           margin-left: 20px;
           margin-bottom: 15px;
           display: inline-block;
