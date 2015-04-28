@@ -54,6 +54,7 @@
             <li><a href="#journee">Journée</a></li>
             <li><a href="#program">Programme</a></li>
             <li><a href="#partner">Partenaires</a></li>
+            <li><a href="#infos">Informations Pratiques</a></li>
           </ul>
         </nav>
     </section>
@@ -151,7 +152,7 @@
                         <td>14h05 - 14h55</td>
                         <td class="center-cell popupable" data-toggle="modal" data-target="#resiliance-modal">Résiliance : Chaos Monkey
                         </td>
-                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#puppet-modal">
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#rxjava-modal">
                             RX Java
                         </td>
                         <td rowspan="4" class="inscription-cell open-inscription"><a
@@ -160,23 +161,23 @@
                     </tr>
                     <tr>
                         <td>15h00 - 15h50</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#jenkins-modal">TechEvent microservice en démo
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#techevent-modal">TechEvent microservice en démo
                         </td>
-                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#xldeploy-modal">
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#akka-modal">
                             Code Akka
                         </td>
                     </tr>
                     <tr>
                         <td>16h05 - 16h55</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#graphite-modal">Spring Boot
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#spring-modal">Spring Boot
                         </td>
-                        <td class="last-cell second-room">Kafka</td>
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#kafka-modal">Kafka</td>
                     </tr>
                     <tr>
                         <td>17h00 - 18h00</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#perf-modal">Atelier TypeSafe (anglais) : Akka stream
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#atelier-modal">Atelier TypeSafe (anglais) : Akka stream
                         </td>
-                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#kibana-modal">Getling : perf : comment je file mon app
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#gatling-modal">Gatling : perf : comment je file mon app
                         </td>
                     </tr>
                     <tr class="inscription-line open-inscription">
@@ -227,6 +228,18 @@
 
 
     </section>
+
+    <section class="tagline" id="infos">
+
+
+
+            <h2>Informations <span class="pixel_title">PRATIQUES</span></h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.090095413806!2d2.3110180000000002!3d48.875559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc7c0eb09d3%3A0x9e4ee4f2dab76471!2sXebia+It+Architects!5e0!3m2!1sfr!2sfr!4v1430225125298" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+
+
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -273,6 +286,386 @@
         </div>
     </section>
 </footer>
+
+<div class="modal fade" id="vsc-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retour d'expérience avec Alexandre Godet de Voyages-Sncf.fr</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
+                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
+                    y compris le QA dans certaines organisations.
+                </strong></p>
+
+                <p class="slot">
+                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
+                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
+                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
+                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
+                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
+                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Alexandre Godet" src="images/speaker/alexandre_godet.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Alexandre Godet</span>
+
+                            <p class="desc">En 2005, Alexandre Godet intègre le groupe Voyages-Sncf.com où il est, depuis 2009, leader technique.
+
+Il y assure la conception d’une version du site Internet et l’animation d’une équipe dédiée. Il intervient sur plusieurs sites : le site loisirs (voyages-sncf.com), le site européen (tgveurope.com) ainsi que le site mobile (voyages-sncf.mobi) optimisé pour les Smartphones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Alexis Kinsella" src="images/speaker/alexis_kinsella.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Alexis Kinsella</span>
+
+                            <p class="desc">Alexis Kinsella est un consultant Xebia passionnée aussi bien par les problématiques frontend (web et mobile) que backend. Après de longues années passées sur les technologies Java, Alexis a fait d'iOS et Node.js ses nouveaux terrains d'expérimentation lui permettant d'explorer les architectures mobiles et ses problématiques associées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="sgcib-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retour d'expérience avec Thierry Abaléa de la SGCIB</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
+                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
+                    y compris le QA dans certaines organisations.
+                </strong></p>
+
+                <p class="slot">
+                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
+                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
+                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
+                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
+                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
+                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Thierry Abaléa" src="images/speaker/thierry_abalea.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Thierry Abaléa</span>
+
+                            <p class="desc">Thierry Abaléa est développeur depuis plus d'une douzaine d'années.Il relève depuis 7 ans les défis que lui offre la SGCIB. Bien que fortement intéressé par l'informatique théorique et l'ingénierie logicielle, il ne se complait vraiment dans son travail que si les méthodes et la technique sont dictées par le problème à résoudre. En amateur de défis, il rejoint volontier les environnements sujets à la haute scalabilité ou à la faible latence. Ainsi il n'est pas surprenant qu'il vous parle d'hardware dans une conversation liée au code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="resiliance-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Resiliance Chaos</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Une application performante c’est&nbsp;: plus de clients sur un site internet,
+                    plus de satisfaction des utilisateurs, un gage de confiance auprès d’eux, des coût plus faibles en
+                    terme d’infrastructure, etc.
+                </strong></p>
+
+                <p class="slot">
+                    Le scenario bien souvent rencontré ressemble malheureusement plutôt à ceci : les tests de
+                    performance sont intégrés trop tard dans le cycle de vie d’une application. Les choix
+                    d’architectures n’ont pas été validés assez tôt en termes de performance mais il est maintenant trop
+                    tard, il faut lancer le site et on ne peut pas revenir sur les fondements. Alors on scale
+                    verticalement.
+                    Remédions à cela et démontrons comment nous pouvons industrialiser nos tests de performance dès les
+                    premières lignes de code de notre application.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Pablo Lopez" src="images/speaker/pablo.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Pablo Lopez</span>
+
+                            <p class="desc">Je suis directeur technique de Xebia. J'ai 11 ans d’expérience au cours desquels je me suis forgé une solide expérience d’architecte logiciel. Je dispose d’une très large compétence sur l’ensemble de l’écosystème JEE, et notamment les solutions du monde open-source. Opérationnel par goût, j'interviens sur une large variété de missions, de l'analyse de performances en production au conseil en architecture logicielle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+
+
+                        <div class="img-wrapper right">
+                            <img alt="Vincent Spiewak" src="images/speaker/Vincent_Spiewak.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Vincent Spiewak</span>
+
+                            <p class="desc">Vincent est un consultant passionné travaillant chez Xebia. Il aime concevoir des projets innovants dans un cadre Agile. Son expérience tourne autour du monde Java / EE, Scala, WOA, et de la conduite du changement.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="gatling-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Gatling : perf : comment je file mon app</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Une application performante c’est&nbsp;: plus de clients sur un site internet,
+                    plus de satisfaction des utilisateurs, un gage de confiance auprès d’eux, des coût plus faibles en
+                    terme d’infrastructure, etc.
+                </strong></p>
+
+                <p class="slot">
+                    Le scenario bien souvent rencontré ressemble malheureusement plutôt à ceci : les tests de
+                    performance sont intégrés trop tard dans le cycle de vie d’une application. Les choix
+                    d’architectures n’ont pas été validés assez tôt en termes de performance mais il est maintenant trop
+                    tard, il faut lancer le site et on ne peut pas revenir sur les fondements. Alors on scale
+                    verticalement.
+                    Remédions à cela et démontrons comment nous pouvons industrialiser nos tests de performance dès les
+                    premières lignes de code de notre application.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Jean-Pascal Thiery" src="images/speaker/jeanpascal_thiery.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Jean-Pascal Thiery</span>
+
+                            <p class="desc">Java Craftsman et agiliste pratiquant. Jean-Pascal a arpenté les voies de l'intégration continue jusqu'à intégrer la mouvance DevOps. Il aime : Java, Docker, Mesos, et la qualité des livrables. Il n'aime pas : les phrases qui commence par "Normalement, ...".
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+
+
+                        <div class="img-wrapper right">
+                            <img alt="William Montaz" src="images/speaker/William_Montaz.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">William Montaz</span>
+
+                            <p class="desc">William a 7 ans d'expérience dans l'ingénierie logicielle. Depuis 2 ans, il s'est principalement focalisé sur les problématiques de performances liées à l'écosystème Java et aux architectures distribués. Il fait partie de cellule performance de Voyages-SNCF Technologie depuis 2 ans.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="akka-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Code Akka</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
+                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
+                    y compris le QA dans certaines organisations.
+                </strong></p>
+
+                <p class="slot">
+                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
+                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
+                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
+                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
+                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
+                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Fabian Gutierrez" src="images/speaker/fabian_gutierrez.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Fabian Gutierrez</span>
+
+                            <p class="desc">Thierry Abaléa est développeur depuis plus d'une douzaine d'années.Il relève depuis 7 ans les défis que lui offre la SGCIB. Bien que fortement intéressé par l'informatique théorique et l'ingénierie logicielle, il ne se complait vraiment dans son travail que si les méthodes et la technique sont dictées par le problème à résoudre. En amateur de défis, il rejoint volontier les environnements sujets à la haute scalabilité ou à la faible latence. Ainsi il n'est pas surprenant qu'il vous parle d'hardware dans une conversation liée au code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="kafka-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Kafka</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
+                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
+                    y compris le QA dans certaines organisations.
+                </strong></p>
+
+                <p class="slot">
+                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
+                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
+                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
+                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
+                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
+                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Sylvain Lequeux" src="images/speaker/sylvain_lequeux.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Sylvain Lequeux</span>
+
+                            <p class="desc">Thierry Abaléa est développeur depuis plus d'une douzaine d'années.Il relève depuis 7 ans les défis que lui offre la SGCIB. Bien que fortement intéressé par l'informatique théorique et l'ingénierie logicielle, il ne se complait vraiment dans son travail que si les méthodes et la technique sont dictées par le problème à résoudre. En amateur de défis, il rejoint volontier les environnements sujets à la haute scalabilité ou à la faible latence. Ainsi il n'est pas surprenant qu'il vous parle d'hardware dans une conversation liée au code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="spring-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Spring Boot</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
+                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
+                    y compris le QA dans certaines organisations.
+                </strong></p>
+
+                <p class="slot">
+                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
+                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
+                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
+                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
+                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
+                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Nicolas Jozwiak" src="images/speaker/nicolas_jozwiak.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Nicolas Jozwiak</span>
+
+                            <p class="desc">Nicolas est un ingénieur d'études confirmé disposant de 5 ans d'expérience de conception et développement sur technologies Java/JEE. Son parcours chez un éditeur avant son entrée chez Xebia lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité).
+
+Nicolas est Scrum Master Certifié et bénéficie d’une expérience très solide de mise en place des méthodes agiles et d’accompagnement d’équipe sur le terrain. Il est reconnu pour son approche pragmatique, proactive et pédagogique.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Thomas Auffredou" src="images/speaker/thomas_auffredou.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Thomas Auffredou</span>
+
+                            <p class="desc">Alexis Kinsella est un consultant Xebia passionnée aussi bien par les problématiques frontend (web et mobile) que backend. Après de longues années passées sur les technologies Java, Alexis a fait d'iOS et Node.js ses nouveaux terrains d'expérimentation lui permettant d'explorer les architectures mobiles et ses problématiques associées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div class="modal fade" id="xldeploy-modal" tabindex="-1">
     <div class="modal-dialog">
@@ -441,12 +834,12 @@
     </div>
 </div>
 
-<div class="modal fade" id="puppet-modal" tabindex="-1">
+<div class="modal fade" id="rxjava-modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Puppet, un outil pour les installer tous.</h4>
+                <h4 class="modal-title">RX Java.</h4>
             </div>
             <div class="modal-body">
                 <p class="slot"><strong>Avec l'expansion de la virtualisation et du Cloud, il est maintenant possible
@@ -466,11 +859,27 @@
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Mathieu Nantern" src="images/speaker/Mathieu_Nantern.png"/>
+                            <img alt="Jérôme Doucet" src="images/speaker/jerome_doucet.jpg"/>
                         </div>
 
                         <div class="info">
-                            <span class="name">Mathieu Nantern</span>
+                            <span class="name">Jérôme Doucet</span>
+
+                            <p class="desc">Au cours de ces dernières années je me suis particulièrement intéressé à
+                                toutes les problématiques liées au déploiement applicatif, à l’automatisation et au
+                                NoSQL. Durant mes dernières expériences, j’ai au l’occasion de remplacer MySQL par
+                                Cassandra mais également de déployer 2000 serveurs avec Puppet ainsi que d’automatiser
+                                l’ensemble des installations middleware pour un client. </p>
+                        </div>
+                    </div>
+
+                    <div class="speaker">
+                        <div class="img-wrapper right">
+                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.jpg"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Romain Niveau</span>
 
                             <p class="desc">Au cours de ces dernières années je me suis particulièrement intéressé à
                                 toutes les problématiques liées au déploiement applicatif, à l’automatisation et au
@@ -684,12 +1093,12 @@
     </div>
 </div>
 
-<div class="modal fade" id="jenkins-modal" tabindex="-1">
+<div class="modal fade" id="techevent-modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">De l'Intégration Continue au Déploiement Continu avec Jenkins </h4>
+                <h4 class="modal-title">TechEvent microservice en démo.</h4>
             </div>
             <div class="modal-body">
                 <p class="slot"><strong>Le concept de “DONE” a évolué au sein des équipes projets de “Les tests
@@ -711,11 +1120,11 @@
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Cyrille Leclerc" src="images/speaker/Cyrille_LeClerc.jpg"/>
+                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.jpg"/>
                         </div>
 
                         <div class="info">
-                            <span class="name">Cyrille Leclerc</span>
+                            <span class="name">Romain Niveau</span>
 
                             <p class="desc">Cyrille est Architecte Solutions chez CloudBees avec plus de 15 années
                                 d’expérience sur les technologies Java.
@@ -731,10 +1140,10 @@
                     <div class="speaker">
 
                         <div class="img-wrapper right">
-                            <img alt="Geoffroy Warrin" src="images/speaker/Geoffroy_Warrin.png"/>
+                            <img alt="Thomas Auffredou" src="images/speaker/thomas_auffredou.png"/>
                         </div>
                         <div class="info">
-                            <span class="name">Geoffroy Warrin</span>
+                            <span class="name">Thomas Auffredou</span>
 
                             <p class="desc">Geoffroy est apprenti craftman et développeur marteau scotché au Cloud.</p>
                         </div>
