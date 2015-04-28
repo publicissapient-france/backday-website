@@ -67,7 +67,7 @@
 
     <div class="more-button">
         <div class="triangle">&nbsp;</div>
-        <img alt="button more" src="images/Img-devops-btn-red.png"/>
+        <a href="#journee"><img alt="button more" src="images/Img-devops-btn-red.png" /></a>
     </div>
 </header>
 <main>
@@ -770,6 +770,12 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js"></script>
 <script type="text/javascript">
 $('nav a[href]').on('click', function(e){
+    e.preventDefault();
+    var link = $(this).attr('href');
+    $('body').animate({ scrollTop: $(link).offset().top }, 1000);
+});
+
+$('.more-button a[href]').on('click', function(e){
     e.preventDefault();
     var link = $(this).attr('href');
     $('body').animate({ scrollTop: $(link).offset().top }, 1000);
