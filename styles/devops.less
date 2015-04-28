@@ -1,3 +1,15 @@
+//fonts
+
+@font-face{
+    font-family : "visitor";
+    src : url('../fonts/visitor2-webfont.woff') format('woff'),
+          url('../fonts/visitor2-webfont.svg') format('svg'),
+          url('../fonts/visitor2-webfont.ttf') format('truetype');
+}
+
+
+
+
 //mixins
 .clearFloat() {
   &:after {
@@ -84,8 +96,18 @@ body {
 
 @xebiaColorDeep: #45133F;
 @orangeColor: #F99B1D;
+@redColor: #aa2615;
 
 @greyBackgroundProgram: #F5F5F5;
+
+.pixel_title
+{
+  font-family: "visitor";
+  font-size:40px;
+  color:@redColor;
+
+
+}
 
 .inner-wrapper {
   max-width: 1024px;
@@ -103,6 +125,40 @@ header {
     min-height: 60px;
     background-color: @xebiaColor;
     padding-bottom: 10px;
+
+    nav {
+
+      float:right;
+      padding-top:30px;
+
+      ul{
+
+
+        li
+        {
+          display:inline-block;
+
+          a{
+            color:white;
+            text-decoration:none;
+            margin-right:20px;
+
+            padding: 20px 20px;
+
+            @media (max-width:480px)
+            {
+              padding:0px;
+              text-align:center;
+            }
+
+            &:hover
+            {
+              border-bottom: 2px solid white;
+            }
+          }
+        }
+      }
+    }
 
     .logo-xebia {
       margin-left: 45px;
@@ -125,12 +181,33 @@ header {
     .clearFloat();
   }
 
-  .devops {
+  .backday {
+
+    background-color:#000;
+    background-image:url(../images/header/img_back_day_xebia.png);
+
+    @media (max-width:540px){
+      background-image:url(../images/header/img_back_day_mobile.png);
+      background-size:100%;
+      min-width:320px;
+      background-position:top;
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 700px;
+    background-size: 1460px;
+    position: relative;
+
+
     .inner-wrapper {
       min-height: 464px;
+
+      @media (max-width:540px){
+        min-height:364px;
+      }
     }
     position: relative;
-    .diagonal-gradient(@xebiaColorDeep, @xebiaColor);
 
     .devops-titre {
       margin-top: 55px;
@@ -146,7 +223,7 @@ header {
     .time-wrapper {
       margin-top: 60px;
       time {
-        color: @orangeColor;
+        color: @redColor;
         font-size: 50px;
         margin-left: 40px;
 
@@ -211,7 +288,7 @@ main section {
 }
 
 .centerBloc() {
-  max-width: 824px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,9 +309,9 @@ main section {
   }
 
   &:hover {
-    color: @orangeColor;
+    color: @redColor;
     &:after {
-      background-color: @orangeColor;
+      background-color: @redColor;
     }
   }
 }
@@ -243,7 +320,7 @@ main {
   .tagline {
     h1 {
       text-align: center;
-      color: @orangeColor;
+      color: @redColor;
       font-size: 22px;
       padding-top: 30px;
       padding-bottom: 30px;
@@ -262,6 +339,8 @@ main {
       b {
         font-weight: bold;
       }
+
+
     }
 
     .first-paragraph {
@@ -284,7 +363,7 @@ main {
       text-align: center;
 
       a {
-        color:orange;
+        color:@redColor;
         text-decoration: none;
 
         &:hover {
@@ -311,13 +390,13 @@ main {
     padding-bottom: 60px;
 
     h1 {
-      text-align: center;
+
       text-transform: uppercase;
       font-size: 22px;
       padding-top: 30px;
-      padding-bottom: 15px;
+
       margin-bottom: 15px;
-      color: @xebiaColor;
+      
 
       max-width: 900px;
       margin-left: auto;
@@ -340,7 +419,7 @@ main {
         margin-right: auto;
 
         thead th {
-          color: @orangeColor;
+          color: @redColor;
           text-transform: uppercase;
           font-weight: bold;
         }
@@ -385,7 +464,7 @@ main {
           a {
             text-decoration: none;
             &:hover {
-              color: @orangeColor;
+              color: @redColor;
             }
           }
 
@@ -399,7 +478,7 @@ main {
             color: @xebiaColor;
 
             &:hover {
-              color: @orangeColor;
+              color: @redColor;
             }
 
             @media (min-width: 860px ) {
@@ -477,11 +556,11 @@ main {
 
             &.center-cell:before {
               content: 'LOG';
-              color: @orangeColor;
+              color: @redColor;
             }
             &.second-room:before {
               content: 'PERF';
-              color: @orangeColor;
+              color: @redColor;
             }
 
             &.inscription-cell {
@@ -504,6 +583,10 @@ main {
 
     margin-top: 20px;
 
+    @media (max-width:480px){
+      margin-bottom:30px;
+    }
+
     .centerBloc();
 
     b {
@@ -517,14 +600,20 @@ main {
     .img-wrapper {
 
       &.first {
-        width: 290px;
+
       }
       &.second {
         width: 200px;
+        position: relative;
+        top: 25px;
+
+        @media (max-width:480px){
+          top:0px;
+        }
       }
       &.third {
         margin-left: 20px;
-        width: 160px;
+
       }
 
       &.second-quarter, &.third-quarter, &.fourth-quarter {
@@ -538,7 +627,7 @@ main {
 
       display: inline-block;
       img {
-        margin: 20px 0;
+
       }
 
       .xebia-labs {
@@ -624,7 +713,7 @@ footer {
     }
 
     .tagline-alliance {
-      width: 450px;
+      width: 550px;
       margin: auto;
       @media (max-width: 470px) {
         width: 100%;
@@ -856,11 +945,11 @@ button.close {
 }
 
 .modal-header {
-  background-color: @orangeColor;
+  background-color: @redColor;
   color: white;
 
   .close {
-    color: @orangeColor;
+    color: @redColor;
     opacity: 1;
     background-color: white;
     @sizeClose: 25px;
@@ -869,7 +958,7 @@ button.close {
     border-radius: @sizeClose;
 
     &:hover {
-      color: darken(@orangeColor, 10%);
+      color: darken(@redColor, 10%);
       background-color: darken(white, 10%);
       opacity: 1;
     }
@@ -1012,7 +1101,7 @@ button.close {
 
         .name {
           text-transform: uppercase;
-          color: @orangeColor;
+          color: @redColor;
           margin-left: 20px;
           margin-bottom: 15px;
           display: inline-block;

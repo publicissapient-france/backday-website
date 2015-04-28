@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>Journée Devops</title>
+    <title>Back Day - 3 Juin 2015 - Xebia</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Xebia IT Architects"/>
@@ -22,6 +22,7 @@
 
     <link href="styles/main.min.css" rel="stylesheet"/>
 
+
     <script type="text/javascript">
         WebFontConfig = {
             google: { families: [  'Roboto:400,700:latin' ] }
@@ -38,6 +39,8 @@
     </script>
 
 
+
+
 </head>
 <body>
 <header>
@@ -45,38 +48,41 @@
         <a href="http://www.xebia.fr" target="_blank" title="Site Xebia France">
             <img src="images/xebia_logo-large-purple.png" class="logo-xebia" alt="logo xebia"/>
         </a>
+        <nav>
+          <ul>
+            <li><a href="#journee">Journée</a></li>
+            <li><a href="#program">Programme</a></li>
+            <li><a href="#partner">Partenaires</a></li>
+          </ul>
+        </nav>
     </section>
 
-    <section class="devops">
+    <section class="backday">
         <div class="inner-wrapper">
-            <img alt="Journée Devops" src="images/header/NEW-Page-Devops_03.png" class="devops-titre"/>
 
-            <div class="time-wrapper">
-                <time datetime="2014-06-10">Le 10 Juin 2014</time>
-            </div>
 
-            <img alt="Devops logo" src="images/header/Img-header-devops.png" class="devops-logo"/>
+
         </div>
     </section>
 
     <div class="more-button">
         <div class="triangle">&nbsp;</div>
-        <img alt="button more" src="images/Img-devops-btn-orange.png"/>
+        <img alt="button more" src="images/Img-devops-btn-red.png"/>
     </div>
 </header>
 <main>
-    <section class="tagline">
+    <section class="tagline" id="journee">
         <div class="inner-wrapper">
-            <h1>You build it, you run it</h1>
+            <h1>Hello, i'm backman</h1>
 
-            <h2>Journée <b>DevOps</b></h2>
+            <h2>Back <span class="pixel_title">DAY</span></h2>
 
             <div class="techtrends-wrapper">
                 <a href="http://techtrends.xebia.fr/techtrends-xebia-devops.pdf"
                    title="Télécharger le techtrends">
                     <img class="techtrends" alt="Le techtrends" src="images/techtrends-devops.png"/>
 
-                    <div>Télécharger le techtrends</div>
+                    <div>Télécharger le Techtrends #7 - Back</div>
                 </a>
             </div>
 
@@ -90,9 +96,9 @@
                 blocages, qui freinent la productivité du système d'information de l'entreprise.</p>
         </div>
     </section>
-    <section class="program">
+    <section class="program" id="program">
         <div class="inner-wrapper">
-            <h1>Le <b>programme</b></h1>
+            <h1>Le <span class="pixel_title">programme</span></h1>
 
             <div class="table-wrapper">
                 <table id="table-planning">
@@ -108,7 +114,7 @@
                     <tr>
                         <td>9h00 - 9h30</td>
                         <td colspan="2">Petit Déjeuner</td>
-                        <td rowspan="6" class="inscription-cell">Sur invitation uniquement</td>
+                        <td rowspan="6" class="inscription-cell open-inscription"><a href="https://www.eventbrite.fr/e/billets-journee-back-lessentiel-16726652869" target="_blank">S'inscrire sur Eventbrite</td>
                     </tr>
                     <tr>
                         <td>9h30 - 10h15</td>
@@ -118,76 +124,70 @@
                     </tr>
                     <tr>
                         <td>10h15 - 11h15</td>
-                        <td colspan="2" class="last-cell" >Retour
-                            d'expérience Société Générale
+                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#vsc-modal">Retour
+                            d'expérience VSC
                         </td>
-                    </tr>
-                    <tr>
-                        <td>11h15 - 11h30</td>
-                        <td colspan="2" class="last-cell">Pause café</td>
                     </tr>
                     <tr>
                         <td>11h30 - 12h30</td>
-                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#sfr-modal">Retour d'expérience SFR</td>
+                        <td colspan="2" class="last-cell popupable" data-toggle="modal" data-target="#sgcib-modal">Retour d'expérience SGCIB</td>
                     </tr>
+
                     <tr>
-                        <td>12h45 - 14h00</td>
+                        <td>12h30 - 13h30</td>
                         <td colspan="2" class="last-cell">Pause déjeuner</td>
                     </tr>
                     <tr class="inscription-line">
-                        <td colspan="4">Sur invitation uniquement</td>
+                        <td colspan="4" class="inscription-cell open-inscription"><a href="https://www.eventbrite.fr/e/billets-journee-back-lessentiel-16726652869">S'inscrire sur Eventbrite</td>
                     </tr>
                     </tbody>
                     <tbody>
+                      <tr>
+                          <td>13h30 - 14h00</td>
+                          <td colspan="2" class="last-cell">Présentation technique</td>
+                      </tr>
                     <tr>
-                        <td>14h00 - 15h00</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#agile-devops-modal">La boite
-                            à outils agile d'une équipe DevOps
+                        <td>14h05 - 14h55</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#resiliance-modal">Résiliance : Chaos Monkey
                         </td>
                         <td class="last-cell second-room popupable" data-toggle="modal" data-target="#puppet-modal">
-                            Puppet, un outil pour les installer tous
+                            RX Java
                         </td>
                         <td rowspan="4" class="inscription-cell open-inscription"><a
-                                href="https://www.eventbrite.fr/e/billets-devops-day-by-xebia-en-pratique-11503558453">S'incrire
+                                href="https://www.eventbrite.fr/e/billets-journee-back-en-pratique-16727087168" target="_blank">S'incrire
                             sur Eventbrite</a></td>
                     </tr>
                     <tr>
-                        <td>15h00 - 16h05</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#jenkins-modal">De
-                            l'Intégration Continue au Déploiement Continu avec Jenkins
+                        <td>15h00 - 15h50</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#jenkins-modal">TechEvent microservice en démo
                         </td>
                         <td class="last-cell second-room popupable" data-toggle="modal" data-target="#xldeploy-modal">
-                            Les piliers du déploiement applicatif avec XL Deploy de
-                            XebiaLabs
+                            Code Akka
                         </td>
                     </tr>
                     <tr>
-                        <td>16h10 - 17h10</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#graphite-modal">Un outil de
-                            monitoring applicatif
+                        <td>16h05 - 16h55</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#graphite-modal">Spring Boot
                         </td>
-                        <td class="last-cell second-room">Atelier AppDynamics</td>
+                        <td class="last-cell second-room">Kafka</td>
                     </tr>
                     <tr>
-                        <td>17h15 - 18h15</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#perf-modal">Tests de
-                            performance en continu
+                        <td>17h00 - 18h00</td>
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#perf-modal">Atelier TypeSafe (anglais) : Akka stream
                         </td>
-                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#kibana-modal">Des
-                            dashboards pour tous avec ElasticSearch, Logstash et
-                            Kibana
+                        <td class="last-cell second-room popupable" data-toggle="modal" data-target="#kibana-modal">Getling : perf : comment je file mon app
                         </td>
                     </tr>
                     <tr class="inscription-line open-inscription">
                         <td colspan="4"><a
-                                href="https://www.eventbrite.fr/e/billets-devops-day-by-xebia-en-pratique-11503558453">S'inscrire
+                                href="https://www.eventbrite.fr/e/billets-journee-back-en-pratique-16727087168" target="_blank">S'inscrire
                             sur Eventbrite</a></td>
                     </tr>
                     </tbody>
                     <tbody>
                     <tr>
-                        <td>18h15 - 19h30</td>
-                        <td colspan="2" class="last-cell">Buffet campagnard</td>
+                        <td>18h00 - 19h30</td>
+                        <td colspan="2" class="last-cell">Cocktail dinatoire</td>
 
                         <td rowspan="2" class="inscription-cell last-line open-inscription"><a href="http://www.meetup.com/Paris-Puppet-DevOps-Meetup/events/186095702/">S'inscrire sur Meetup
                         </td>
@@ -195,7 +195,7 @@
                     </tr>
                     <tr>
                         <td class="last-line">19h30 - 22h00</td>
-                        <td colspan="2" class="last-line">Meetup par Puppet User France</td>
+                        <td colspan="2" class="last-line">Meetup</td>
                     </tr>
                     <tr class="inscription-line open-inscription">
                         <td colspan="4"><a href="http://www.meetup.com/Paris-Puppet-DevOps-Meetup/events/186095702/">S'inscrire sur Meetup
@@ -206,38 +206,24 @@
             </div>
         </div>
     </section>
-    <section class="partner">
-        <h1>Nos <b>Partenaires</b></h1>
+    <section class="partner" id="partner">
+        <h1>Nos <span class="pixel_title">Partenaires</span></h1>
 
         <div class="logo-partner">
             <a href="https://www.sgcib.com/" target="_blank" class="img-wrapper first">
                 <img alt="Logo Société Générale" src="images/partner/Logo-Societe-Generale.png"/>
             </a>
 
-            <a href="https://www.appdynamics.fr/" target="_blank" class="img-wrapper second">
-                <img alt="Logo AppDynamics" src="images/partner/Img-devops-appdynamics.png"/>
+            <a href="https://www.voyage-sncf.fr/" target="_blank" class="img-wrapper second">
+                <img alt="Logo Voyage SNCF" src="images/partner/logo-vsc.png"/>
             </a>
 
-            <a href="http://graphite.wikidot.com/" target="_blank" class="img-wrapper third">
-                <img alt="Logo Graphite" src="images/partner/Logo-graphite.png"/>
+            <a href="http://www.typesafe.com/" target="_blank" class="img-wrapper third">
+                <img alt="Logo Typesafe" src="images/partner/logo-typesafe.png"/>
             </a>
 
         </div>
 
-        <div class="logo-partner">
-            <a href="http://www.elasticsearch.org/" target="_blank" class="img-wrapper first">
-                <img alt="Logo ElatsticSearch" src="images/partner/Logo-elasticsearch.png"/>
-            </a>
-            <a href="http://sfr.fr/" target="_blank" class="img-wrapper third">
-                <img alt="Logo SFR" src="images/partner/Img-devops-sfr.png"/>
-            </a>
-            <a href="http://www.xebialabs.com/" target="_blank" class="img-wrapper second">
-                <img alt="Logo XebiaLabs" class="xebia-labs" src="images/partner/Img-devops-Xebialabs.png"/>
-            </a>
-            <a href="http://puppetlabs.com/" target="_blank" class="img-wrapper third">
-                <img alt="Logo PuppetLabs" src="images/partner/Img-devops-puppetlab.png"/>
-            </a>
-        </div>
 
     </section>
 </main>
@@ -246,16 +232,16 @@
     <section class="social">
         <a href="http://www.linkedin.com/company/xebia-france" class="linkedin" target="_blank">
             <img src="images/social/Img-devops-linkedin-violet.png" alt="Linkedin" class="inactive"/>
-            <img src="images/social/Img-devops-linkedin-orange.png" alt="Linkedin" class="active"/>
+            <img src="images/social/Img-devops-linkedin-red.png" alt="Linkedin" class="active"/>
 
         </a>
         <a href="https://plus.google.com/100396468532572979348/posts" class="google" target="_blank">
             <img src="images/social/Img-devops-google-violet.png" alt="Google+" class="inactive"/>
-            <img src="images/social/Img-devops-google-orange.png" alt="Google+" class="active"/>
+            <img src="images/social/Img-devops-google-red.png" alt="Google+" class="active"/>
         </a>
         <a href="https://twitter.com/XebiaFr" class="twitter" target="_blank">
             <img src="images/social/Img-devops-tweeter-violet.png" alt="Twitter" class="inactive"/>
-            <img src="images/social/Img-devops-tweeter-orange.png" alt="Twitter" class="active"/>
+            <img src="images/social/Img-devops-tweeter-red.png" alt="Twitter" class="active"/>
         </a>
     </section>
 
@@ -267,13 +253,19 @@
                                                                               alt="Alliance Xebia"></a>
 
                 <div><span class="unused">=</span>
-                    <a href="http://www.xebia.fr/">Xebia</a>
+                    <a href="http://www.xebia.fr/" target="_blank">Xebia</a>
                     <span class="unused">+</span>
-                    <a href="http://xebialabs.com/">XebiaLabs</a>
+                    <a href="http://xebialabs.com/" target="_blank">XebiaLabs</a>
                     <span class="unused">+</span>
-                    <a href="http://www.thiga.fr/">Thiga</a>
+                    <a href="http://www.thiga.fr/" target="_blank">Thiga</a>
                     <span class="unused">+</span>
-                    <a href="http://www.ux-republic.com/">UX-Republic</a>
+                    <a href="http://www.ux-republic.com/" target="_blank">UX-Republic</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.cellenza.fr/" target="_blank">Cellenza</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.wescale.fr/" target="_blank">Wescale</a>
+                    <span class="unused">+</span>
+                    <a href="http://www.akamis.com/" target="_blank">Akamis</a>
                 </div>
             </div>
 
@@ -776,6 +768,14 @@
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js"></script>
+<script type="text/javascript">
+$('nav a[href]').on('click', function(e){
+    e.preventDefault();
+    var link = $(this).attr('href');
+    $('body').animate({ scrollTop: $(link).offset().top }, 1000);
+});
+
+</script>
 
 </body>
 </html>
