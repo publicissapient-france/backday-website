@@ -79,14 +79,14 @@
 
             <h2>Back <span class="pixel_title">DAY</span></h2>
 
-            <div class="techtrends-wrapper">
-                <a href="http://techtrends.xebia.fr/techtrends-xebia-devops.pdf"
+            <!--<div class="techtrends-wrapper">
+                <a href="http://techtrends.xebia.fr"
                    title="Télécharger le techtrends">
-                    <img class="techtrends" alt="Le techtrends" src="images/techtrends-devops.png"/>
+                    <img class="techtrends" alt="Le techtrends" src="images/techtrends-back.png"/>
 
                     <div>Télécharger le Techtrends #7 - Back</div>
                 </a>
-            </div>
+            </div>-->
 
             <p class="first-paragraph">Afin de garder son entreprise compétitive, il est essentiel de faire évoluer les technologies de son SI et d’éviter d’entrer dans une spirale négative d’obsolescence de ses composants.
               Les utilisateurs sont de plus en plus exigeants sur la rapidité de circulation de l’information, qu’ils doivent pouvoir consommer au travers de multiples canaux (web, téléphone, tablette, etc.).
@@ -173,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>17h00 - 18h00</td>
-                        <td class="center-cell popupable" data-toggle="modal" data-target="#atelier-modal">Atelier TypeSafe (anglais) : Akka stream
+                        <td class="center-cell popupable" data-toggle="modal" data-target="#atelier-modal">Going Reactive with Akka Streams (Présentation en Anglais)
                         </td>
                         <td class="last-cell second-room popupable" data-toggle="modal" data-target="#gatling-modal">Gatling : perf : comment je file mon app
                         </td>
@@ -373,6 +373,66 @@ Il y assure la conception d’une version du site Internet et l’animation d’
                             <span class="name">Thierry Abaléa</span>
 
                             <p class="desc">Thierry Abaléa est développeur depuis plus d'une douzaine d'années.Il relève depuis 7 ans les défis que lui offre la Société Générale. Bien que fortement intéressé par l'informatique théorique et l'ingénierie logicielle, il ne se complait vraiment dans son travail que si les méthodes et la technique sont dictées par le problème à résoudre. En amateur de défis, il rejoint volontier les environnements sujets à la haute scalabilité ou à la faible latence. Ainsi il n'est pas surprenant qu'il vous parle d'hardware dans une conversation liée au code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="atelier-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Going Reactive with Akka Streams (Présentation en Anglais)</h4>
+            </div>
+            <div class="modal-body">
+                <p class="slot"><strong>Akka Streams are an implementation of Reactive Streams (http://reactive-streams.org/).
+
+
+
+                </strong></p>
+
+                <p class="slot">
+                  The specification is a joint effort to standardize the exchange of streams of data across
+
+                  asynchronous boundaries, in a fully non-blocking way, while providing flow control and
+
+                  mediating back pressure. In this presentation we go into the details of what this new
+
+                  abstraction can be used for, and what the guiding principles are behind its development.
+
+                  We will explore how to process streaming data by defining flows, and how reactive
+
+                  streams are used within Akka HTTP.
+                </p>
+
+                <div class="speakers">
+                    <h4><strong>Speakers</strong></h4>
+
+                    <div class="speaker">
+                        <div class="img-wrapper">
+                            <img alt="Lutz Huehnken" src="images/speaker/lutz_huehnken.png"/>
+                        </div>
+
+                        <div class="info">
+                            <span class="name">Lutz Huehnken</span>
+
+                            <p class="desc">Lutz Huehnken is a Solutions Architect forTypesafe. He has been working in
+
+professional software development since 1997. In this time, he has taken on different
+
+roles in the creation of web applications in various industries. His current focus is
+
+Reactive Programming - the development of fault-tolerant, highly scalable, truly
+
+distributed systems - with Scala, Akka and Play. Occasionally he talks about this on
+
+conferences, for example code.talks, devoxx, and JAX. He tweets as @lutzhuehnken.
                             </p>
                         </div>
                     </div>
@@ -945,20 +1005,30 @@ Rx apporte également de nouveaux opérateurs et une approche fonctionnelle du t
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Keynote d'ouverture</h4>
+                <h4 class="modal-title">Keynote d'ouverture : The world is going reactive (Anglais)</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Les banques se comparent souvent entre elles.
-                    Mais en 2011, nous avons souhaité aller un cran plus loin,
-                    en prenant comme référence les géants du web.
-                    Ces derniers ont en effet compris comment mettre l’IT au service de la valeur apportée aux clients.
+                <p class="slot"><strong>The way we develop software has changed. To keep up with the changes in IT
+
+hardware, in volume of transactions, in number of devices connected and in user
+
+expectations, a new architecture has emerged to address today’s new challenges:
+
+Reactive programming. What does it mean, what are the characteristics, properties
+
+behind reactive applications?
+
+We will explore why companies are moving to reactive systems now, going through real
+
+cases examples from large corporations.
+
+
                 </strong></p>
 
                 <p class="slot">
-                    Les cycles de développement itératifs ont une valeur maximale quand le produit est livré au client
-                    final.
-                    Cela permet une boucle de rétroaction vers l’équipe projet.
-                    Nous avons poussé l’agilité à l’extrême en mettant en production nos itérations.
+                  We will explore why companies are moving to reactive systems now, going through real
+
+                  cases examples from large corporations.
                 </p>
 
                 <div class="speakers">
@@ -966,14 +1036,17 @@ Rx apporte également de nouveaux opérateurs et une approche fonctionnelle du t
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Carlos Goncalves" src="images/speaker/Carlos_Goncalves.png"/>
+                            <img alt="Ygor Lutz" src="images/speaker/ygor_lutz.png"/>
                         </div>
 
                         <div class="info">
-                            <span class="name">Carlos Goncalves</span>
+                            <span class="name">Ygor Lutz</span>
 
-                            <p class="desc">Carlos Goncalves est DSI, Global Banking & Investor Solutions, Société
-                                Générale</p>
+                            <p class="desc">Ygor Lutz is Business Development Director for Typesafe EMEA and brings over 15
+
+years of experience in Enterprise software, ID security, mobile and web. Ygor is
+
+economist with an MBA from EPFL / HEC Lausanne and sits in the board of 2 startups.</p>
                         </div>
                     </div>
                 </div>
