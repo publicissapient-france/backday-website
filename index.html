@@ -114,7 +114,7 @@
                     <tr>
                         <td>9h00 - 9h30</td>
                         <td colspan="2">Petit Déjeuner</td>
-                        <td rowspan="6" class="inscription-cell open-inscription"><a href="https://www.eventbrite.fr/e/billets-journee-back-lessentiel-16726652869" target="_blank">S'inscrire sur Eventbrite</td>
+                        <td rowspan="6" class="inscription-cell open-inscription">Inscription sur invitation uniquement</td>
                     </tr>
                     <tr>
                         <td>9h30 - 10h15</td>
@@ -138,7 +138,7 @@
                         <td colspan="2" class="last-cell">Pause déjeuner</td>
                     </tr>
                     <tr class="inscription-line">
-                        <td colspan="4" class="inscription-cell open-inscription"><a href="https://www.eventbrite.fr/e/billets-journee-back-lessentiel-16726652869">S'inscrire sur Eventbrite</td>
+                        <td colspan="4" class="inscription-cell open-inscription">Inscription sur invitation uniquement</td>
                     </tr>
                     </tbody>
                     <tbody>
@@ -187,7 +187,7 @@
                     <tbody>
                     <tr>
                         <td>18h00 - 19h30</td>
-                        <td colspan="2" class="last-cell">Cocktail dinatoire</td>
+                        <td colspan="2" class="last-cell">Buffet campagnard</td>
 
                         <td rowspan="2" class="inscription-cell last-line open-inscription"><a href="http://www.meetup.com/" target="_blank">S'inscrire sur Meetup
                         </td>
@@ -298,7 +298,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Retour d'expérience avec Alexandre Godet de Voyages-Sncf.fr</h4>
+                <h4 class="modal-title">Retour d'expérience de VSCT</h4>
             </div>
             <div class="modal-body">
                 <p class="slot"><strong>Secrets de conception d’une application innovante au service des voyageurs.
@@ -329,7 +329,7 @@ Il y assure la conception d’une version du site Internet et l’animation d’
 
                     <div class="speaker">
                         <div class="img-wrapper right">
-                            <img alt="Alexis Kinsella" src="images/speaker/alexis_kinsella.jpg"/>
+                            <img alt="Alexis Kinsella" src="images/speaker/alexis_kinsella.JPG"/>
                         </div>
 
                         <div class="info">
@@ -388,27 +388,17 @@ Il y assure la conception d’une version du site Internet et l’animation d’
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Going Reactive with Akka Streams (Présentation en Anglais)</h4>
+                <h4 class="modal-title">Going Réactif avec Streams Akka (présentation en anglais)</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Akka Streams are an implementation of Reactive Streams (http://reactive-streams.org/).
+                <p class="slot"><strong>Akka Streams est une implémentation de Reactive Streams ( http://reactive-streams.org/ ). La spécification est un effort conjoint de normaliser l'échange de flux de données à travers les frontières asynchrones, de manière totalement non-bloquant, tout en offrant le contrôle de flux et de médiation contre-pression.
 
 
 
                 </strong></p>
 
                 <p class="slot">
-                  The specification is a joint effort to standardize the exchange of streams of data across
-
-                  asynchronous boundaries, in a fully non-blocking way, while providing flow control and
-
-                  mediating back pressure. In this presentation we go into the details of what this new
-
-                  abstraction can be used for, and what the guiding principles are behind its development.
-
-                  We will explore how to process streaming data by defining flows, and how reactive
-
-                  streams are used within Akka HTTP.
+                  Dans cette présentation, nous allons voir comment cette nouvelle abstraction peut être utilisée et les principes qui en découlent. Nous allons explorer le process pour traiter des données en définissant les flux puis étudier comment Reactive streams sont utilisés avec Akka HTTP.
                 </p>
 
                 <div class="speakers">
@@ -422,17 +412,8 @@ Il y assure la conception d’une version du site Internet et l’animation d’
                         <div class="info">
                             <span class="name">Lutz Huehnken</span>
 
-                            <p class="desc">Lutz Huehnken is a Solutions Architect forTypesafe. He has been working in
-
-professional software development since 1997. In this time, he has taken on different
-
-roles in the creation of web applications in various industries. His current focus is
-
-Reactive Programming - the development of fault-tolerant, highly scalable, truly
-
-distributed systems - with Scala, Akka and Play. Occasionally he talks about this on
-
-conferences, for example code.talks, devoxx, and JAX. He tweets as @lutzhuehnken.
+                            <p class="desc">Lutz Huehnken est un Solutions Architect chez TypeSafe. Il travaille dans le développement de logiciels depuis 1997. Actuellement, il assure la création d'applications web dans diverses industries. Ses centres d'intérêts actuels sont la programmation réactive, le développement de systèmes hautement évolutifs, scalables, tolérants à la panne et distribués - avec Scala, Akka and Play.
+Il a fait de multiples présentations lors de conférences telles que code.talks, Devoxx, et JAX.
                             </p>
                         </div>
                     </div>
@@ -452,19 +433,11 @@ conferences, for example code.talks, devoxx, and JAX. He tweets as @lutzhuehnke
                 <h4 class="modal-title">Resiliance Chaos</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Une application performante c’est&nbsp;: plus de clients sur un site internet,
-                    plus de satisfaction des utilisateurs, un gage de confiance auprès d’eux, des coût plus faibles en
-                    terme d’infrastructure, etc.
+                <p class="slot"><strong>
                 </strong></p>
 
                 <p class="slot">
-                    Le scenario bien souvent rencontré ressemble malheureusement plutôt à ceci : les tests de
-                    performance sont intégrés trop tard dans le cycle de vie d’une application. Les choix
-                    d’architectures n’ont pas été validés assez tôt en termes de performance mais il est maintenant trop
-                    tard, il faut lancer le site et on ne peut pas revenir sur les fondements. Alors on scale
-                    verticalement.
-                    Remédions à cela et démontrons comment nous pouvons industrialiser nos tests de performance dès les
-                    premières lignes de code de notre application.
+
                 </p>
 
                 <div class="speakers">
@@ -473,7 +446,7 @@ conferences, for example code.talks, devoxx, and JAX. He tweets as @lutzhuehnke
 
                     <div class="speaker">
                         <div class="img-wrapper">
-                            <img alt="Pablo Lopez" src="images/speaker/pablo.jpg"/>
+                            <img alt="Pablo Lopez" src="images/speaker/pablo.JPG"/>
                         </div>
 
                         <div class="info">
@@ -514,19 +487,11 @@ conferences, for example code.talks, devoxx, and JAX. He tweets as @lutzhuehnke
                 <h4 class="modal-title">Gatling : perf : comment je file mon app</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Une application performante c’est&nbsp;: plus de clients sur un site internet,
-                    plus de satisfaction des utilisateurs, un gage de confiance auprès d’eux, des coût plus faibles en
-                    terme d’infrastructure, etc.
+                <p class="slot"><strong>
                 </strong></p>
 
                 <p class="slot">
-                    Le scenario bien souvent rencontré ressemble malheureusement plutôt à ceci : les tests de
-                    performance sont intégrés trop tard dans le cycle de vie d’une application. Les choix
-                    d’architectures n’ont pas été validés assez tôt en termes de performance mais il est maintenant trop
-                    tard, il faut lancer le site et on ne peut pas revenir sur les fondements. Alors on scale
-                    verticalement.
-                    Remédions à cela et démontrons comment nous pouvons industrialiser nos tests de performance dès les
-                    premières lignes de code de notre application.
+
                 </p>
 
                 <div class="speakers">
@@ -657,18 +622,11 @@ Ses intérêts se tournent vers la programmation réactive et les langages fonct
                 <h4 class="modal-title">Spring Boot</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>Le déploiement applicatif n’est pas une activité des Dev OU des Ops.
-                    C’est une activité transverse qui concerne tous les acteurs d’un projet,
-                    y compris le QA dans certaines organisations.
+                <p class="slot"><strong>
                 </strong></p>
 
                 <p class="slot">
-                    Chacun doit apporter sa pierre à l’édifice&nbsp;: les uns en fournissant des packages applicatifs,
-                    les autres en fournissant l’infrastructure sur laquelle tout le monde va pouvoir déployer.
-                    Dans cette session nous montrerons comment XL Deploy de XebiaLabs met
-                    “tout le monde autour de la table” en fournissant une plate-forme qui permet à l’ensemble
-                    des acteurs d’automatiser ses déploiements, de collaborer en standardisant les pratiques et en
-                    partageant les mêmes objets et concepts et de tracer l’ensemble des actions.
+
                 </p>
 
                 <div class="speakers">
@@ -682,7 +640,7 @@ Ses intérêts se tournent vers la programmation réactive et les langages fonct
                         <div class="info">
                             <span class="name">Nicolas Jozwiak</span>
 
-                            <p class="desc">Nicolas est un ingénieur d'études confirmé disposant de 5 ans d'expérience de conception et développement sur technologies Java/JEE. Son parcours chez un éditeur avant son entrée chez Xebia lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité).
+                            <p class="desc">Nicolas est un ingénieur d'études confirmé disposant de 8 ans d'expérience de conception et développement sur technologies Java/JEE. Son parcours chez un éditeur avant son entrée chez Xebia lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité).
 
 Nicolas est Scrum Master Certifié et bénéficie d’une expérience très solide de mise en place des méthodes agiles et d’accompagnement d’équipe sur le terrain. Il est reconnu pour son approche pragmatique, proactive et pédagogique.
                             </p>
@@ -697,7 +655,7 @@ Nicolas est Scrum Master Certifié et bénéficie d’une expérience très soli
                         <div class="info">
                             <span class="name">Thomas Auffredou</span>
 
-                            <p class="desc">Alexis Kinsella est un consultant Xebia passionnée aussi bien par les problématiques frontend (web et mobile) que backend. Après de longues années passées sur les technologies Java, Alexis a fait d'iOS et Node.js ses nouveaux terrains d'expérimentation lui permettant d'explorer les architectures mobiles et ses problématiques associées.
+                            <p class="desc">
                             </p>
                         </div>
                     </div>
@@ -712,7 +670,7 @@ Nicolas est Scrum Master Certifié et bénéficie d’une expérience très soli
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">RX Java.</h4>
+                <h4 class="modal-title">RX Java</h4>
             </div>
             <div class="modal-body">
                 <p class="slot"><strong>RxJava est une des nombreuses implémentations du concept de reactive programming.</strong></p>
@@ -736,27 +694,19 @@ Rx apporte également de nouveaux opérateurs et une approche fonctionnelle du t
                         <div class="info">
                             <span class="name">Jérôme Doucet</span>
 
-                            <p class="desc">Au cours de ces dernières années je me suis particulièrement intéressé à
-                                toutes les problématiques liées au déploiement applicatif, à l’automatisation et au
-                                NoSQL. Durant mes dernières expériences, j’ai au l’occasion de remplacer MySQL par
-                                Cassandra mais également de déployer 2000 serveurs avec Puppet ainsi que d’automatiser
-                                l’ensemble des installations middleware pour un client. </p>
+                            <p class="desc"> </p>
                         </div>
                     </div>
 
                     <div class="speaker">
                         <div class="img-wrapper right">
-                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.jpg"/>
+                            <img alt="Romain Niveau" src="images/speaker/romain_niveau.JPG"/>
                         </div>
 
                         <div class="info">
                             <span class="name">Romain Niveau</span>
 
-                            <p class="desc">Au cours de ces dernières années je me suis particulièrement intéressé à
-                                toutes les problématiques liées au déploiement applicatif, à l’automatisation et au
-                                NoSQL. Durant mes dernières expériences, j’ai au l’occasion de remplacer MySQL par
-                                Cassandra mais également de déployer 2000 serveurs avec Puppet ainsi que d’automatiser
-                                l’ensemble des installations middleware pour un client. </p>
+                            <p class="desc"> </p>
                         </div>
                     </div>
 
@@ -774,27 +724,15 @@ Rx apporte également de nouveaux opérateurs et une approche fonctionnelle du t
                 <h4 class="modal-title">Keynote d'ouverture : The world is going reactive (Anglais)</h4>
             </div>
             <div class="modal-body">
-                <p class="slot"><strong>The way we develop software has changed. To keep up with the changes in IT
+                <p class="slot"><strong>La manière de développer des logiciels a changé.
+Pour suivre les changements de l'IT, dû à l'augmentation du volume de transactions, du nombre d'appareils connectés et des attentes utilisateurs, une nouvelle architecture a vu le jour pour répondre aux défis d'aujourd'hui : la programmation réactive.
 
-hardware, in volume of transactions, in number of devices connected and in user
-
-expectations, a new architecture has emerged to address today’s new challenges:
-
-Reactive programming. What does it mean, what are the characteristics, properties
-
-behind reactive applications?
-
-We will explore why companies are moving to reactive systems now, going through real
-
-cases examples from large corporations.
 
 
                 </strong></p>
 
                 <p class="slot">
-                  We will explore why companies are moving to reactive systems now, going through real
-
-                  cases examples from large corporations.
+                  Qu'est ce que c'est ? Quelles sont les caractéristiques et propriétés derrière ce terme ? Nous allons explorer pourquoi les entreprises se tournent vers ces systèmes réactifs aujourd'hui, à travers des exemples de grandes sociétés.
                 </p>
 
                 <div class="speakers">
@@ -808,11 +746,7 @@ cases examples from large corporations.
                         <div class="info">
                             <span class="name">Ygor Lutz</span>
 
-                            <p class="desc">Ygor Lutz is Business Development Director for Typesafe EMEA and brings over 15
-
-years of experience in Enterprise software, ID security, mobile and web. Ygor is
-
-economist with an MBA from EPFL / HEC Lausanne and sits in the board of 2 startups.</p>
+                            <p class="desc">Ygor Lutz est le directeur commercial de Typesafe EMEA avec plus de 15 années d'expérience dans le développement logiciel, la sécurité ID, le web et le mobile. Ygor est titulaire d'un MBA de l'EPFL / HEC Lausanne et siège au sein du conseil de 2 startups.</p>
                         </div>
                     </div>
                 </div>
@@ -854,13 +788,7 @@ economist with an MBA from EPFL / HEC Lausanne and sits in the board of 2 startu
                         <div class="info">
                             <span class="name">Romain Niveau</span>
 
-                            <p class="desc">Cyrille est Architecte Solutions chez CloudBees avec plus de 15 années
-                                d’expérience sur les technologies Java.
-                                Il est arrivé chez CloudBees en venant de Xebia où il était CTO et architecte.
-                                Adopteur précoce du modèle “You Build It, You run It”, Cyrille a naturellement embrassé
-                                la culture DevOps, le Continuous Delivery et le Cloud.
-                                Cyrille est très actif dans la communauté Java en tant que créateur du projet Open
-                                Source embedded-jmxtrans et que speaker dans des conférences.
+                            <p class="desc">
                             </p>
                         </div>
                     </div>
@@ -873,7 +801,7 @@ economist with an MBA from EPFL / HEC Lausanne and sits in the board of 2 startu
                         <div class="info">
                             <span class="name">Thomas Auffredou</span>
 
-                            <p class="desc">Geoffroy est apprenti craftman et développeur marteau scotché au Cloud.</p>
+                            <p class="desc"></p>
                         </div>
 
 
