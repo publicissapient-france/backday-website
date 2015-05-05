@@ -1,13 +1,8 @@
-Site journée Devoxx
+Site Back Day
 ===========
 
-Website Devops Day
+Website Back Day
 
 
 
 ----
-
-
-
-
-

@@ -1,3 +1,15 @@
+//fonts
+
+@font-face{
+    font-family : "visitor";
+    src : url('../fonts/visitor2-webfont.woff') format('woff'),
+          url('../fonts/visitor2-webfont.svg') format('svg'),
+          url('../fonts/visitor2-webfont.ttf') format('truetype');
+}
+
+
+
+
 //mixins
 .clearFloat() {
   &:after {
@@ -88,6 +100,15 @@ body {
 
 @greyBackgroundProgram: #F5F5F5;
 
+.pixel_title
+{
+  font-family: "visitor";
+  font-size:40px;
+  color:@redColor;
+
+
+}
+
 .inner-wrapper {
   max-width: 1024px;
   margin-left: auto;
@@ -104,6 +125,44 @@ header {
     min-height: 60px;
     background-color: @xebiaColor;
     padding-bottom: 10px;
+
+    nav {
+
+      float:right;
+      padding-top:30px;
+
+      @media (max-width:480px){
+        display:none;
+      }
+
+      ul{
+
+
+        li
+        {
+          display:inline-block;
+
+          a{
+            color:white;
+            text-decoration:none;
+            margin-right:20px;
+
+            padding: 20px 20px;
+
+            @media (max-width:480px)
+            {
+              padding:0px;
+              text-align:center;
+            }
+
+            &:hover
+            {
+              border-bottom: 2px solid white;
+            }
+          }
+        }
+      }
+    }
 
     .logo-xebia {
       margin-left: 45px;
@@ -164,12 +223,39 @@ header {
   .backday {
 
     background-color:#000;
+<<<<<<< HEAD
 
     .inner-wrapper {
       min-height: 400px;
     }
     position: relative;
 
+=======
+    background-image:url(../images/header/img_back_day_xebia.png);
+
+    @media (max-width:540px){
+      background-image:url(../images/header/img_back_day_mobile.png);
+      background-size:100%;
+      min-width:320px;
+      background-position:top;
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 700px;
+    background-size: 1460px;
+    position: relative;
+
+
+    .inner-wrapper {
+      min-height: 464px;
+
+      @media (max-width:540px){
+        min-height:364px;
+      }
+    }
+    position: relative;
+>>>>>>> master
 
     .devops-titre {
       margin-top: 55px;
@@ -182,6 +268,15 @@ header {
       bottom: 5px;
     }
 
+<<<<<<< HEAD
+=======
+    .time-wrapper {
+      margin-top: 60px;
+      time {
+        color: @redColor;
+        font-size: 50px;
+        margin-left: 40px;
+>>>>>>> master
 
 
     @media (max-width: 1020px) {
@@ -286,6 +381,8 @@ main {
       b {
         font-weight: bold;
       }
+
+
     }
 
     .first-paragraph {
@@ -308,11 +405,19 @@ main {
       text-align: center;
 
       a {
+<<<<<<< HEAD
         color:#aa2615;
         text-decoration: none;
 
         &:hover {
           color:#aa2615;
+=======
+        color:@redColor;
+        text-decoration: none;
+
+        &:hover {
+          color:@redColor;
+>>>>>>> master
           text-decoration: none;
         }
       }
@@ -529,6 +634,10 @@ main {
 
     margin-top: 20px;
 
+    @media (max-width:480px){
+      margin-bottom:30px;
+    }
+
     .centerBloc();
 
     b {
@@ -547,7 +656,15 @@ main {
       &.second {
         width: 200px;
         position: relative;
+<<<<<<< HEAD
 top: 20px;
+=======
+        top: 25px;
+
+        @media (max-width:480px){
+          top:0px;
+        }
+>>>>>>> master
       }
       &.third {
         margin-left: 20px;
@@ -565,7 +682,7 @@ top: 20px;
 
       display: inline-block;
       img {
-        margin: 20px 0;
+
       }
 
       .xebia-labs {
@@ -704,6 +821,15 @@ footer {
         float: none;
       }
     }
+  }
+}
+
+#infos
+{
+  padding-bottom:0px;
+
+  h2{
+    margin-bottom:10px;
   }
 }
 
