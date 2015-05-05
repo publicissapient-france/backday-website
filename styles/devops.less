@@ -170,42 +170,7 @@ header {
       float: left;
     }
 
-    nav {
-
-      float:right;
-      padding-right: 100px;
-      padding-top:30px;
-
-      @media (max-width:480px) {
-
-        float:none;
-        padding-right:0;
-        display:block;
-        text-align:center;
-
-      }
-
-      ul li {
-
-      display:inline-block;
-      padding: 0px 30px;
-
-      @media (max-width:480px) {
-
-        padding:10px 30px;
-        display:block;
-      }
-
-      a {
-        color:white;
-        text-decoration:none;
-        font-size:18px;
-      }
-    }
-
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 420px) {
       text-align: center;
       .logo-xebia {
         margin-top: 0;
@@ -223,14 +188,6 @@ header {
   .backday {
 
     background-color:#000;
-<<<<<<< HEAD
-
-    .inner-wrapper {
-      min-height: 400px;
-    }
-    position: relative;
-
-=======
     background-image:url(../images/header/img_back_day_xebia.png);
 
     @media (max-width:540px){
@@ -255,7 +212,6 @@ header {
       }
     }
     position: relative;
->>>>>>> master
 
     .devops-titre {
       margin-top: 55px;
@@ -268,16 +224,18 @@ header {
       bottom: 5px;
     }
 
-<<<<<<< HEAD
-=======
     .time-wrapper {
       margin-top: 60px;
       time {
         color: @redColor;
         font-size: 50px;
         margin-left: 40px;
->>>>>>> master
 
+        @media(max-width: 400px) {
+          margin-left: 0;
+        }
+      }
+    }
 
     @media (max-width: 1020px) {
       text-align: center;
@@ -289,7 +247,11 @@ header {
       }
     }
 
-
+    @media (max-width: 705px) {
+      .devops-logo {
+        width: 100%;
+      }
+    }
 
     @media (max-width: 470px) {
       .devops-titre {
@@ -373,7 +335,7 @@ main {
       text-transform: uppercase;
       font-size: 21px;
       border-bottom: 1px solid black;
-      max-width:900px;
+
       margin-top: 20px;
 
       .centerBloc();
@@ -405,19 +367,11 @@ main {
       text-align: center;
 
       a {
-<<<<<<< HEAD
-        color:#aa2615;
-        text-decoration: none;
-
-        &:hover {
-          color:#aa2615;
-=======
         color:@redColor;
         text-decoration: none;
 
         &:hover {
           color:@redColor;
->>>>>>> master
           text-decoration: none;
         }
       }
@@ -455,7 +409,6 @@ main {
       border-bottom: 1px solid black;
       b {
         font-weight: bold;
-        color:#aa2615;
       }
     }
 
@@ -656,15 +609,11 @@ main {
       &.second {
         width: 200px;
         position: relative;
-<<<<<<< HEAD
-top: 20px;
-=======
         top: 25px;
 
         @media (max-width:480px){
           top:0px;
         }
->>>>>>> master
       }
       &.third {
         margin-left: 20px;
